@@ -1,0 +1,6 @@
+ls -d ../ist_repo/data_exp4/nonQoESce0/* |grep "Client_...._rst" |awk '{print "awk -F, -f fBW", $1}' > run_fBW_nonQoE_Sce0
+chmod +x run_fBW_nonQoE_Sce0
+ls -d ../ist_repo/data_exp4/nonCoopSce0/* |grep "Client_...._rst" |awk '{print "awk -F, -f fBW", $1}' > run_fBW_nonCoop_Sce0
+chmod +x run_fBW_nonCoop_Sce0
+ls -d ../ist_repo/data_exp4/coopSce0/* |grep "Client_...._rst" |awk '{print "awk -F, -f fBW", $1}' > run_fBW_coop_Sce0
+chmod +x run_fBW_coop_Sce0

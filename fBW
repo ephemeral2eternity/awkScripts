@@ -1,0 +1,3 @@
+BEGIN{getline;sum=min=max=$5}
+NF{max = (max>$5)?max:$5;min = (min>$5)?$5:min;sum+=$5}
+END{print "Minimum: ", min, "    Maximum:", max, "   Mean:", sum/NR}
